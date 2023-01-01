@@ -2,7 +2,7 @@ package cn.ken.thread;
 
 /**
  * <pre>
- * <p>线程的创建方式2:FutureTask</p>
+ * <p>线程的创建方式2:FutureTask和Thread</p>
  * </pre>
  *
  * @author <a href="https://github.com/kil1ua">Ken-Chy129</a>

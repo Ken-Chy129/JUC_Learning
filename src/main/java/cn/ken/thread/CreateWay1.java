@@ -4,7 +4,7 @@ import lombok.extern.slf4j.Slf4j;
 
 /**
  * <pre>
- * <p>线程的创建方式1:Thread</p>
+ * <p>线程的创建方式1:Runnable和Thread</p>
  * </pre>
  *
  * @author <a href="https://github.com/kil1ua">Ken-Chy129</a>
