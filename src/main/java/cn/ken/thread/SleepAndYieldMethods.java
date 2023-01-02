@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
  * @date 2023/1/2 22:23
  */
 @Slf4j
-public class SleepAndYieldMethod {
+public class SleepAndYieldMethods {
     
     public static void main(String[] args) throws InterruptedException {
         Thread t1 = new Thread(() -> {
