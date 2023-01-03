@@ -30,7 +30,7 @@ public class SleepAndYieldMethods {
         t1.start();
         
         Thread.sleep(500); // 先让主线程睡眠一段时间，防止调用interrupt方发时t1线程还位睡眠
-        log.debug("sleep时的状态:{}", t1.getState());
+        log.debug("sleep时的状态:{}", t1.getState()); // TIMED_WAITING
         log.debug("interrupt...");
         t1.interrupt(); // TIME_WAITING
         TimeUnit.MILLISECONDS.sleep(500); // 睡眠1秒，可读性更高，底层还是调用的Thread.sleep
