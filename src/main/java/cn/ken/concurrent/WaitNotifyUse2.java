@@ -4,14 +4,16 @@ import lombok.extern.slf4j.Slf4j;
 
 /**
  * <pre>
- * 使用wait，notify（保护性暂停 ）模拟join方法的实现
+ * 保护性暂停
+ * 较之于join的好处是，join需要等待现成的运行结束，而使用以下方法只要结果计算出来释放锁，另一个线程就可以使用，不需要等待线程结束
+ * join的实现方式其实也是类似，只不过结束条件是isAlive为false而不是结果是否计算出来(无传递等待时间的情况下)
  * </pre>
  *
  * @author <a href="https://github.com/Ken-Chy129">Ken-Chy129</a>
  * @date 2023/1/13 19:17
  */
 @Slf4j
-public class WaitNotifyToSimulateJoin {
+public class WaitNotifyUse2 {
 
     public static void main(String[] args) {
         GuardedObject guardedObject = new GuardedObject();
